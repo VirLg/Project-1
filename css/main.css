@@ -112,7 +112,7 @@ img {
 .logo-span {
   color: var(--accent-text-color);
   font-family: Raleway;
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 700;
 }
 
@@ -120,7 +120,7 @@ img {
   text-decoration: none;
   color: var(--title-text-color);
   font-family: Raleway, sans-serif;
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 700;
   line-height: 1.19;
   letter-spacing: 0.03em;
@@ -163,6 +163,12 @@ img {
     display: none;
   }
 }
+.page-header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 @media screen and (max-width: 767px) {
   .ul-nav {
     display: none;
@@ -180,18 +186,11 @@ img {
     width: 40px;
     height: 40px;
   }
+  .page-header {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
 }
-.page-header__container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.page-header {
-  padding-top: 16px;
-  padding-bottom: 16px;
-}
-
 @media screen and (min-width: 768px) {
   .open-mobile-menu-btn {
     display: none;
@@ -201,7 +200,7 @@ img {
     align-items: center;
   }
   .nav {
-    display: flex;
+    font-size: 12px;
     padding-top: 32px;
     padding-bottom: 32px;
     color: var(--title-text-color);
@@ -217,7 +216,7 @@ img {
   }
   .ul-nav {
     display: flex;
-    margin-left: 20px;
+    margin-left: 88px;
     align-items: baseline;
   }
   .ul-nav li + li {
@@ -226,6 +225,99 @@ img {
   .ul-nav .mailto {
     width: 34px;
     height: 34px;
+  }
+  .nav-aut a {
+    color: var(--primary-text-color);
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .link-nav-tel,
+.link-nav-mail {
+    display: flex;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1, 166;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+  }
+  .link-nav-tel {
+    padding-top: 10px;
+    margin-right: auto;
+  }
+  .mailto-item {
+    width: 32px;
+    height: 16px;
+    fill: currentColor;
+  }
+  .mailto-tel {
+    width: 20px;
+    height: 16px;
+    fill: currentColor;
+  }
+  .link-nav-tel,
+.link-nav-mail {
+    flex-direction: row-reverse;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .nav {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: var(--title-text-color);
+    text-decoration: none;
+    font-family: Roboto;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .nav:focus, .nav:hover {
+    color: var(--accent-text-color);
+  }
+  .nav.current::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-text-color);
+    bottom: 0;
+    border-radius: 2px;
+  }
+  .current {
+    color: var(--accent-text-color);
+    position: relative;
+  }
+  /* .list a:hover,
+  .list a:focus {
+    color: var(--accent-text-color);
+  } */
+  .ul-nav {
+    margin-left: 90px;
+    align-items: baseline;
+  }
+  .ul-nav li + li {
+    margin-left: 50px;
+  }
+  .ul-nav .mailto {
+    width: 34px;
+    height: 34px;
+  }
+  .link-nav-mail:hover,
+.link-nav-mail:focus {
+    color: var(--accent-text-color);
+  }
+  .link-nav-tel:hover,
+.link-nav-tel:focus {
+    color: var(--accent-text-color);
+  }
+  .link-nav-tel,
+.link-nav-mail {
+    flex-direction: row-reverse;
   }
   .nav-aut {
     margin-left: auto;
@@ -240,31 +332,31 @@ img {
     letter-spacing: 0.02em;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
+  .clients {
+    background-color: rgba(245, 244, 250, 0.0784313725);
+  }
+  .mailto-fone,
+.mailto-post {
+    align-items: center;
+    display: inline-flex;
+  }
+  .mailto-item {
+    width: 32px;
+    height: 16px;
+    fill: currentColor;
+  }
+  .mailto-tel {
+    width: 20px;
+    height: 16px;
+    fill: currentColor;
+  }
+  .header {
+    border-bottom: 1px solid #ececec;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
-.nav-aut {
-  margin-left: auto;
-}
-.nav-aut li + li {
-  margin-left: 50px;
-}
-.nav-aut a {
-  color: var(--primary-text-color);
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.nav-aut .mailto-item {
-  width: 32px;
-  height: 16px;
-  fill: currentColor;
-}
-.nav-aut .mailto-tel {
-  width: 20px;
-  height: 16px;
-  fill: currentColor;
-}
-
 .title {
   margin: 0;
   font-family: Roboto, sans-serif;
@@ -438,34 +530,34 @@ img {
 
 .heroy-box {
   min-height: 600px;
-  background-image: url(../../images/bg/bg-mobile.jpg);
+  background-image: url(../images/bg/bg-mobile.jpg);
   background-position: center top;
   background-repeat: no-repeat;
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 480px), screen and (min-resolution: 192dpi) and (min-width: 480px), screen and (min-resolution: 2dppx) and (min-width: 480px) {
   .heroy-box {
-    background-image: url(../../images/bg/bg-mobile@2x.jpg);
+    background-image: url(../images/bg/bg-mobile@2x.jpg);
   }
 }
 @media screen and (min-width: 768px) {
   .heroy-box {
-    background-image: url(../../images/bg/bg-tablet.jpg);
+    background-image: url(../images/bg/bg-tablet.jpg);
   }
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
   .heroy-box {
-    background-image: url(../../images/bg/bg-tablet@2x.jpg);
+    background-image: url(../images/bg/bg-tablet@2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
   .heroy-box {
-    background-image: url(../../images/bg/bg-desktop.jpg);
+    background-image: url(../images/bg/bg-desktop.jpg);
   }
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   .heroy-box {
-    background-image: url(../../images/bg/bg-desktop@2x.jpg);
+    background-image: url(../images/bg/bg-desktop@2x.jpg);
   }
 }
 .our-work__item {

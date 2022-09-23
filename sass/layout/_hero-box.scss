@@ -1,6 +1,6 @@
 .heroy-box {
 min-height: 600px;
-background-image: url(../../images/bg/bg-mobile.jpg);
+background-image: url(../images/bg/bg-mobile.jpg);
 background-position: center top;
 
 background-repeat: no-repeat;
@@ -11,7 +11,7 @@ background-repeat: no-repeat;
 screen and (min-resolution: 192dpi) and (min-width: 480px),
 screen and (min-resolution: 2dppx) and (min-width: 480px) {
     .heroy-box {
-        background-image: url(../../images/bg/bg-mobile@2x.jpg);
+        background-image: url(../images/bg/bg-mobile@2x.jpg);
     }
 }
 
@@ -20,7 +20,7 @@ screen and (min-resolution: 2dppx) and (min-width: 480px) {
 
 @media screen  and (min-width: 768px){
     .heroy-box {
-        background-image: url(../../images/bg/bg-tablet.jpg);
+        background-image: url(../images/bg/bg-tablet.jpg);
     }
 }
 
@@ -30,7 +30,7 @@ screen and (min-resolution: 2dppx) and (min-width: 480px) {
 screen and (min-resolution: 192dpi) and (min-width: 768px),
 screen and (min-resolution: 2dppx) and (min-width: 768px) {
     .heroy-box {
-        background-image: url(../../images/bg/bg-tablet@2x.jpg);
+        background-image: url(../images/bg/bg-tablet@2x.jpg);
     }
 }
 
@@ -38,7 +38,7 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
 
 @media screen and (min-width: 1200px) {
     .heroy-box {
-        background-image: url(../../images/bg/bg-desktop.jpg);
+        background-image: url(../images/bg/bg-desktop.jpg);
     }
 }
 
@@ -48,7 +48,7 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
 screen and (min-resolution: 192dpi) and (min-width: 1200px),
 screen and (min-resolution: 2dppx) and (min-width: 1200px) {
     .heroy-box{
-        background-image: url(../../images/bg/bg-desktop@2x.jpg);
+        background-image: url(../images/bg/bg-desktop@2x.jpg);
     }
 }
 
