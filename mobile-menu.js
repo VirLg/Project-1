@@ -1,5 +1,3 @@
-
-
 (() => {
 
   const refs = {
@@ -12,13 +10,9 @@
 
   };
 
-​
-
   refs.openMenuBtn.addEventListener('click', toggleModal);
 
   refs.closeMenuBtn.addEventListener('click', toggleModal);
-
-​
 
   function toggleModal() {
 
@@ -27,6 +21,8 @@
   }
 
 })();
+
+
 
 
 
