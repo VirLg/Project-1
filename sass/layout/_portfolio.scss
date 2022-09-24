@@ -1,4 +1,55 @@
 
+.list-project {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+   row-gap: 15px;
+   margin-bottom: 40px;
+}
+
+.flex-project {
+    display: grid;
+
+@media screen and (max-width: 480px) {
+    
+    grid-template-columns: repeat(1, 1fr);
+       
+        row-gap: 30px;
+    .flex-card {
+        width: 100%;
+    }
+     
+    }
+    
+    @media screen and (min-width: 480px) {
+        
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 30px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .portfolio {
     display: block;
@@ -51,7 +102,7 @@
     margin-right: 8px;
 }
 
-.list-project {
-    margin-bottom: 50px;
-    justify-content: center;
-}
+// .list-project {
+//     margin-bottom: 50px;
+//     justify-content: center;
+// }
