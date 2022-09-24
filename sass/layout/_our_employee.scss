@@ -23,7 +23,9 @@
 
     color: var(--title-text-color);
 }
-
+.our-emloyee__content {
+    padding-bottom: 24px;
+}
 .employee-text{
 font-family: Roboto, sans-serif;
 font-style: normal;
@@ -42,6 +44,11 @@ color: var(--primary-text-color);
 display: flex;
 justify-content: center;
 }
+
+.employee-network__ul li + li {
+    margin-left: 10px;
+}
+
 
 .employee-list__item {
 

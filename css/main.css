@@ -656,6 +656,10 @@ img {
   color: var(--title-text-color);
 }
 
+.our-emloyee__content {
+  padding-bottom: 24px;
+}
+
 .employee-text {
   font-family: Roboto, sans-serif;
   font-style: normal;
@@ -671,6 +675,10 @@ img {
   margin-top: 16px;
   display: flex;
   justify-content: center;
+}
+
+.employee-network__ul li + li {
+  margin-left: 10px;
 }
 
 .employee-list__item {
@@ -930,57 +938,6 @@ img {
     width: 270px;
     height: 120px;
   }
-}
-
-.footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  background-color: var(--primary-footer-color);
-}
-
-.footer-ul .footer-item + .footer-item {
-  margin-top: 9px;
-}
-
-.footer-contact {
-  font-style: normal;
-  text-decoration: none;
-  color: rgba(255, 255, 255, 0.6);
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.footer-contact:hover, .footer-contact:focus {
-  color: var(--accent-text-color);
-}
-
-.footer-map {
-  font-style: normal;
-  text-decoration: none;
-  color: var(--primary-white-color);
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.footer-map:hover, .footer-map:focus {
-  color: var(--accent-text-color);
-}
-
-.footer-ul {
-  display: inline-block;
-}
-
-.footer-1 {
-  margin-right: 70px;
-}
-
-.footer-flex {
-  display: flex;
-  align-items: baseline;
-}
-
-.footer-network {
-  margin-top: 20px;
 }
 
 .portfolio {
