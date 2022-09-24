@@ -9,20 +9,30 @@
 
 .our-skills__title {
     margin-bottom: 10px;
+
+    font-family: Roboto, sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+    
+        color: var(--title-text-color);
+}
+
+.our-skills__text{
+font-family: Roboto,sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+
+color: var(--primary-text-color);
 }
 .index-skills__ul {
 
     display: grid;
-
-@media screen and (max-width: 479px) {
-        width: 450px;
-
-        .index-skills__frame {
-            width: 450px;
-            height: 120px;
-        }
-    }
-
 
 
 
@@ -38,7 +48,9 @@
             .our-skills__title {
                 text-align: center;
             }
-        
+                .index-skills__item:not(:last-child) {
+                    margin-bottom: 30px;
+                }
             }
 
 

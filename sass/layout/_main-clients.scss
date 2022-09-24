@@ -1,3 +1,20 @@
+.section__our-employee {
+    background-color: var(--background-button);
+}
+
+.main-client__title {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: var(--title-text-color);
+    margin-bottom: 30px;
+}
+
 .client-svg {
     fill: var(--primary-icon-color);
     width: 106px;
@@ -14,7 +31,21 @@
     align-items: center;
 
     display: flex;
+color: var(--primary-icon-color);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+&:hover,
+    &:focus {
+        border-color: var(--accent-text-color);
+        color: var(--accent-text-color);
+    }
+
+
+
 }
+
+
 
 .main-clients {
     display: grid;
@@ -38,7 +69,7 @@
 
 
     @media screen and (min-width: 480px) {
-        width: 450px;
+       
         grid-template-columns: repeat(2, 1fr);
 
         .main-clients__list {
@@ -49,7 +80,7 @@
     }
 
     @media screen and (min-width: 768px) {
-        width: 738px;
+       
         grid-template-columns: repeat(3, 1fr);
 
         .main-clients__list {
@@ -59,7 +90,7 @@
     }
 
     @media screen and (min-width: 1200px) {
-        width: 1170px;
+       
         grid-template-columns: repeat(6, 1fr);
 
         .main-clients__list {
@@ -73,48 +104,5 @@
 
 
 
-
-
-
-/* .border-logo {
-    width: 170px;
-    height: 92px;
-    border: 1px solid #afb1b8;
-    border-radius: 4px;
-}
-
-*/ .client-svg {
-    fill: currentColor;
-}
-.clients {
-    background-color: #f5f4fa;
-}
-
-.client-icon {
-    display: flex;
-    width: 170px;
-    height: 92px;
-    border: 1px solid var(--primary-icon-color);
-    border-radius: 4px;
-    justify-content: center;
-    align-items: center;
-    color: var(--primary-icon-color);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-
-&:hover,
-&:focus {
-    border-color: var(--accent-text-color);
-    color: var(--accent-text-color);
-}
-
-
-
-}
-
-.client-our {
-    column-gap: 30px;
-}
 
 
