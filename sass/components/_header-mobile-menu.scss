@@ -1,8 +1,6 @@
 @media screen and (max-width:767px) {
     
 
-
-
 .mobile-menu {
     
     position: fixed;
@@ -11,7 +9,8 @@
     z-index: 100;
     width: 100%;
     height: 100%;
-    background-color: red;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
@@ -25,10 +24,12 @@
 .mobile-menu__container {
     position: relative;
     padding-left: 40px;
+    padding-top: 48px;
+    padding-bottom: 48px;
 }
 .close-mobile-menu-btn {
     position: absolute;
-    top: 0;
+    top: 21px;
     right: 15px;
     padding: 0;
     background-color: transparent;
@@ -39,6 +40,35 @@
 .icon-mobile-menu-cross {
     height: 40px;
     width: 40px;
+}
+.mobile-nav__item {
+        font-family: Roboto, sans-serif;
+        
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 1.17;
+        text-align: center;
+        letter-spacing: 0.02em;
+    
+        color: var(--accent-text-color);
+}
+.mobile-nav__link:not(:last-child) {
+    margin-bottom: 36px;
+    
+}
+.mobile-menu__contacts {
+    margin-top: 302px;
+}
+.mobile-menu__contacts li + li {
+    margin-top: 32px;
+}
+.mobile-menu__employee__social {
+    margin-top: 64px;
+}
+.mobile-menu__employee__social li + li{
+    margin-left: 20px;
+    padding-left: 10px;
+    border-left: 1px solid var(--accent-text-color);
 }
 }
 
