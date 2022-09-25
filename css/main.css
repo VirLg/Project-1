@@ -163,6 +163,10 @@ img {
     border: none;
     line-height: 0;
   }
+  .close-mobile-menu-btn:focus icon-mobile-menu-cross {
+    fill: var(--accent-text-color);
+    cursor: pointer;
+  }
   .icon-mobile-menu-cross {
     height: 40px;
     width: 40px;
@@ -822,6 +826,9 @@ img {
   fill: var(--primary-icon-color);
   width: 106px;
   height: 60px;
+}
+.main-clients__list:hover .client-svg, .main-clients__list:focus .client-svg {
+  fill: var(--accent-text-color);
 }
 
 .main-clients__list {

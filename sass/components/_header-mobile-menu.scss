@@ -36,6 +36,11 @@
     background-color: transparent;
     border: none;
     line-height: 0;
+
+    &:focus icon-mobile-menu-cross {
+        fill: var(--accent-text-color);
+        cursor: pointer;
+    }
 }
 
 .icon-mobile-menu-cross {
