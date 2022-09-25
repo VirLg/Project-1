@@ -162,10 +162,13 @@ img {
     background-color: transparent;
     border: none;
     line-height: 0;
-  }
-  .close-mobile-menu-btn:focus icon-mobile-menu-cross {
-    fill: var(--accent-text-color);
     cursor: pointer;
+  }
+  .open-mobile-menu-btn {
+    cursor: pointer;
+  }
+  .close-mobile-menu-btn:focus .icon-mobile-menu-cross {
+    fill: var(--accent-text-color);
   }
   .icon-mobile-menu-cross {
     height: 40px;
