@@ -7,30 +7,65 @@
    margin-bottom: 40px;
 }
 
+
+.card__stile {
+    background: #FFFFFF;
+        border: 1px solid #EEEEEE;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.card__border {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.portfolio-title {
+    text-decoration: none;
+    font-family: Roboto, sans-serif;
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.03em;
+}
+
+.pharagraf-portfolio {
+    color: var(--primary-text-color);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.875;
+    letter-spacing: 0.03em;
+}
+
+.link-portfolio {
+    text-decoration: none;
+}
+
 .flex-project {
     display: grid;
-
-
+}
     @media screen and (max-width: 767px) {
-        
+        .flex-project{
         grid-template-columns: repeat(1, 100%);
-        row-gap: 30px;
+       row-gap: 30px;
     }
+        }
     @media screen and (min-width: 768px) {
-
-        grid-template-columns: repeat(2, 50%);
+.flex-project {
+        grid-template-columns: repeat(2, 1fr);
         column-gap: 30px;
         row-gap: 30px;
 }
-
+}
     @media screen and (min-width: 1200px) {
-
-        grid-template-columns: repeat(3, 33.3333%);
+.flex-project {
+        grid-template-columns: repeat(3, 1fr);
         column-gap: 30px;
         row-gap: 30px;
 }
-}
 
+    }
 
 
 
@@ -60,27 +95,7 @@
 // }
 // }
 
-// .portfolio-title {
-//     text-decoration: none;
-//     font-family: Roboto, sans-serif;
-//     color: var(--title-text-color);
-//     font-weight: 700;
-//     font-size: 18px;
-//     line-height: 2;
-//     letter-spacing: 0.03em;
-// }
 
-// .pharagraf-portfolio {
-//     color: var(--primary-text-color);
-//     font-size: 16px;
-//     font-weight: 400;
-//     line-height: 1.875;
-//     letter-spacing: 0.03em;
-// }
-
-// .link-portfolio {
-//     text-decoration: none;
-// }
 
 // .portfolio-img {
 //     padding: 0;
