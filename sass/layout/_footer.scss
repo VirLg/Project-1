@@ -110,8 +110,48 @@ margin-top: 8px;
     margin-bottom: 20px;
 }
 }
+
+// ===================================================
 @media screen and (min-width: 1200px) {
+ 
+
+.footer-1 {
+        text-align: start;
+    }
+
+.footer-tablet {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer-form {
+    text-align: start;
+    margin-left: auto;
+}  
+.comin-title {
+    margin-top: 0;
+}
+.footer__comin {
+    margin-left: 70px;
+}
 
 
+
+    .footer-ul {
+        display: inline-block;
+    }
+
+    
+
+    .footer-flex {
+        display: flex;
+        align-items: baseline;
+    }
+
+    .footer-network {
+        margin-top: 20px;
+    }
+    
+    
 }
 

@@ -23,6 +23,7 @@
 }
 .mobile-menu__container {
     position: relative;
+
     padding-left: 40px;
     padding-top: 48px;
     padding-bottom: 48px;
@@ -67,9 +68,15 @@
 }
 
 .mobile-menu__employee__social li + li{
-    padding-left: 10px;
-    
+   
     border-left: 1px solid var(--accent-text-color);
+}
+.employee__social__list:not(:last-child) {
+    
+    margin-right: 10px;    
+}
+.employee__social__list:not(:first-child) {
+    padding-left: 10px;
 }
 .mobile-menu__employee__social {
     display: flex;
