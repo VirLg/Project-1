@@ -50,7 +50,7 @@
         text-align: center;
         letter-spacing: 0.02em;
     
-        color: var(--accent-text-color);
+        color: var(--title-text-color);
 }
 .mobile-nav__link:not(:last-child) {
     margin-bottom: 36px;
@@ -65,11 +65,51 @@
 .mobile-menu__employee__social {
     margin-top: 64px;
 }
+
 .mobile-menu__employee__social li + li{
-    margin-left: 20px;
     padding-left: 10px;
+    
     border-left: 1px solid var(--accent-text-color);
 }
+.mobile-menu__employee__social {
+    display: flex;
+    
+    font-family: Roboto,
+    sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;      
+    letter-spacing: 0.02em;     
+    color: var(--accent-text-color);
+}
+
+
+.mobile-menu__tel {
+
+font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.17px;
+    letter-spacing: 0.02em;
+
+    color: var(--accent-text-color);
+}
+.mobile-menu__mail{
+font-family: Roboto,
+    sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 1.16;
+letter-spacing: 0.02em;
+
+color: var(--primary-text-color);
+}
+
+
+
 }
 
 @media screen and (min-width: 768px){

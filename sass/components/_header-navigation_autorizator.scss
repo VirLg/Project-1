@@ -44,6 +44,8 @@
    .page-header__container {
     display: flex;
     align-items: center;
+    padding-top: 21px;
+    padding-bottom: 21px;
    }
 
    .header-navigation {
@@ -88,7 +90,9 @@
 
     }
 }
-
+.nav-aut li + li {
+    margin-top: 9px;
+}
 .nav-aut {
    
 margin-left: auto;
@@ -259,6 +263,7 @@ margin-left: auto;
         background-color: var(--accent-text-color);
         bottom: 0;
         border-radius: 2px;
+        margin-bottom: -32px;
     }
 
 
@@ -288,16 +293,22 @@ margin-left: auto;
 
 
 @media screen and (min-width: 1200px) {
+.page-header__container {
+        
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+
+
 
 .ul-nav {
-    margin-left: 90px;
-  
-
-  
-    
+    margin-left: 90px;    
 }
 
-
+.nav-aut li+li {
+    margin-top: 0px;
+}
 
 
 
