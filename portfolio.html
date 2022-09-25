@@ -19,31 +19,37 @@
   </head>
   <body>
     <!--Header-->
-    <header class="header flex">
+    <header class="page-header">
       <!--================ Navigation===================== -->
 
-      <div class="flex container">
-        <nav class="flex">
+      <div class="container page-header__container">
+        <nav class="header-navigation">
           <a class="nav-logo" href="./index.html"> <span class="logo-span">Web</span>Studio</a>
 
-          <ul class="list link ul-nav flex">
-            <li class="item">
+          <ul class="list link ul-nav">
+            <li class="ul-nav__item">
               <a href="./index.html" class="nav">Студия</a>
             </li>
-            <li class="item">
+            <li class="ul-nav__item">
               <a href="./portfolio.html" class="nav current">Потрфоліо</a>
             </li>
-            <li class="item">
-              <a href="" class="nav">Контакти</a>
+            <li class="ul-nav__item">
+              <a href="./index-test.html" class="nav">Контакти</a>
             </li>
           </ul>
 
           <!-- </nav> -->
         </nav>
+        <button class="open-mobile-menu-btn" type="button" data-menu-open>
+          <svg class="icon-mobile-menu-burger">
+            <use href="./images/sprite.svg#icon-menu-burger"></use>
+          </svg>
+        </button>
+
         <!===================Autorizaciya====================== >
-        <ul class="nav-aut list flex">
+        <ul class="nav-aut list">
           <li class="mailto-post">
-            <a class="link flex link-nav-mail" href="mailto:info@devstudio.com"
+            <a class="link link-nav-mail" href="mailto:info@devstudio.com"
               >info@devstudio.com
               <svg class="mailto-item">
                 <use href="./images/sprite.svg#icon-header-1"></use>
@@ -52,14 +58,89 @@
           </li>
 
           <li class="mailto-fone">
-            <a class="link link-nav-tel flex" href="tel:+380961111111"
+            <a class="link link-nav-tel" href="tel:+380961111111"
               >+38 096 111 11 11
               <svg class="mailto-tel">
-                <use href="./images/sprite.svg#icon-header-2"></use>
+                <use href="./images/sprite.svg#icon-header-2" height="16"></use>
               </svg>
             </a>
           </li>
         </ul>
+      </div>
+      <!-- =================Mobile menu============== -->
+
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu__container">
+          <button class="close-mobile-menu-btn" type="button" data-menu-close>
+            <svg class="icon-mobile-menu-cross">
+              <use href="./images/sprite.svg#icon-menu-cross"></use>
+            </svg>
+          </button>
+          <!-- ====================nav -->
+          <nav class="list">
+            <li class="mobile-nav__link">
+              <a href="./index.html" class="mobile-nav__item link">Студия</a>
+            </li>
+            <li class="mobile-nav__link">
+              <a href="./portfolio.html" class="mobile-nav__item link current">Потрфоліо</a>
+            </li>
+            <li class="mobile-nav__link">
+              <a href="./index-test.html" class="mobile-nav__item link">Контакти</a>
+            </li>
+          </nav>
+          <!-- =====================contacts -->
+          <ul class="list mobile-menu__contacts">
+            <li><a class="mobile-menu__tel link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+            <li>
+              <a class="mobile-menu__mail link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+
+          <!-- ==============================social -->
+          <ul class="list mobile-menu__employee__social">
+            <li class="employee__social__list">
+              <a
+                class="employee-item__social link"
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener"
+              >
+                Instagram
+              </a>
+            </li>
+            <li class="employee__social__list">
+              <a
+                class="employee-item__social link"
+                href="https://twitter.com/?lang=uk"
+                target="_blank"
+                rel="noopener"
+              >
+                Twitter</a
+              >
+            </li>
+            <li class="employee__social__list">
+              <a
+                class="employee-item__social link"
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="noopener"
+              >
+                Facebook</a
+              >
+            </li>
+            <li class="employee__social__list">
+              <a
+                class="employee-item__social link"
+                href="https://www.linkedin.com/"
+                target="_blank"
+                rel="noopener"
+                >LinkedIn
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -600,5 +681,6 @@
         </div>
       </div>
     </footer> -->
+    <script src="./mobile-menu.js"></script>
   </body>
 </html>

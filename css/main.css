@@ -239,6 +239,10 @@ img {
     display: none;
   }
 }
+.page-header {
+  border-bottom: 1px solid #ECECEC;
+}
+
 .page-header__container {
   display: flex;
 }
@@ -1135,6 +1139,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
+  column-gap: 8px;
   row-gap: 15px;
   margin-bottom: 40px;
 }
@@ -1185,6 +1190,9 @@ img {
   }
 }
 @media screen and (min-width: 768px) {
+  .list-project {
+    justify-content: center;
+  }
   .flex-project {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 30px;
