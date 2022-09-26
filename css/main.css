@@ -253,6 +253,7 @@ img {
 
 .page-header__container {
   display: flex;
+  position: relative;
 }
 
 @media screen and (max-width: 767px) {
@@ -602,6 +603,11 @@ img {
   margin-left: 10px;
 }
 
+@media screen and (min-width: 388px) {
+  .footer-form-item {
+    width: 358px;
+  }
+}
 .heroy-box {
   height: 400px;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg/bg-mobile.jpg);
@@ -1209,6 +1215,9 @@ img {
 @media screen and (min-width: 768px) {
   .list-project {
     justify-content: center;
+  }
+  .card__border {
+    padding-bottom: 56px;
   }
   .flex-project {
     grid-template-columns: repeat(2, 1fr);

@@ -56,6 +56,10 @@
         .list-project{
             justify-content: center;
         }
+        .card__border {
+            
+            padding-bottom: 56px;
+        }
 .flex-project {
         grid-template-columns: repeat(2, 1fr);
         column-gap: 30px;
