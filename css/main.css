@@ -51,8 +51,8 @@ p {
 
 img {
   display: block;
-  margin: 0 auto;
-  cursor: pointer;
+  width: 100%;
+  height: auto;
   border: none;
   border-radius: 4px;
 }
@@ -153,10 +153,13 @@ img {
     padding-left: 40px;
     padding-top: 48px;
     padding-bottom: 48px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
   }
   .close-mobile-menu-btn {
     position: absolute;
-    top: 21px;
+    top: 10px;
     right: 15px;
     padding: 0;
     background-color: transparent;
@@ -187,7 +190,7 @@ img {
     margin-bottom: 36px;
   }
   .mobile-menu__contacts {
-    margin-top: 302px;
+    margin-top: auto;
   }
   .mobile-menu__contacts li + li {
     margin-top: 32px;
@@ -196,7 +199,7 @@ img {
     margin-top: 64px;
   }
   .mobile-menu__employee__social li + li {
-    border-left: 1px solid var(--accent-text-color);
+    border-left: 1px solid rgba(33, 33, 33, 0.2);
   }
   .employee__social__list:not(:last-child) {
     margin-right: 10px;
@@ -204,22 +207,27 @@ img {
   .employee__social__list:not(:first-child) {
     padding-left: 10px;
   }
-  .mobile-menu__employee__social {
-    display: flex;
+  .mobile-social__item {
+    color: var(--accent-text-color);
     font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
-    line-height: 1.22;
+    line-height: 1.6;
     letter-spacing: 0.02em;
     color: var(--accent-text-color);
+    padding-bottom: 15px;
+  }
+  .mobile-menu__employee__social {
+    display: flex;
+    flex-wrap: wrap;
   }
   .mobile-menu__tel {
     font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 34px;
-    line-height: 1.17px;
+    line-height: 1.17;
     letter-spacing: 0.02em;
     color: var(--accent-text-color);
   }
@@ -270,8 +278,8 @@ img {
     height: 40px;
   }
   .page-header {
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -530,7 +538,7 @@ img {
 }
 
 .footer-form-item {
-  width: 358px;
+  width: 100%;
   height: 50px;
   color: var(--primary-text-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -595,9 +603,11 @@ img {
 }
 
 .heroy-box {
-  min-height: 400px;
-  background-image: url(../images/bg/bg-mobile.jpg);
+  height: 400px;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg/bg-mobile.jpg);
   background-position: center top;
+  margin-left: auto;
+  margin-right: auto;
   background-repeat: no-repeat;
   text-align: center;
   padding-top: 118px;
@@ -617,17 +627,20 @@ img {
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 480px), screen and (min-resolution: 192dpi) and (min-width: 480px), screen and (min-resolution: 2dppx) and (min-width: 480px) {
   .heroy-box {
-    background-image: url(../images/bg/bg-mobile@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg/bg-mobile@2x.jpg);
+    max-width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
   .heroy-box {
-    background-image: url(../images/bg/bg-tablet.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg/bg-tablet.jpg);
+    max-width: 768px;
   }
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
   .heroy-box {
-    background-image: url(../images/bg/bg-tablet@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg/bg-tablet@2x.jpg);
+    max-width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -638,12 +651,14 @@ img {
   .heroy-box {
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: url(../images/bg/bg-desktop.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg/bg-desktop.jpg);
+    max-width: 1200px;
   }
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   .heroy-box {
-    background-image: url(../images/bg/bg-desktop@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg/bg-desktop@2x.jpg);
+    max-width: 1200px;
   }
 }
 @media screen and (max-width: 1199px) {
@@ -895,6 +910,8 @@ img {
 }
 
 .index-skills__frame {
+  width: 100%;
+  height: 120px;
   display: flex;
   align-items: center;
   justify-content: center;
