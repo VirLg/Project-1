@@ -1,5 +1,6 @@
 .section__our-employee {
     background-color: var(--background-button);
+    
 }
 
 .main-client__title {
@@ -27,7 +28,10 @@
 
 }
 
-
+.main-clients__item {
+    transition: background-color 1250ms cubic-bezier(0.4, 0, 0.2, 1),
+            color 1250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 
 .main-clients__list {
@@ -39,13 +43,13 @@
 
     display: flex;
 color: var(--primary-icon-color);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 
     &:hover,
     &:focus {
         border-color: var(--accent-text-color);
         color: var(--accent-text-color);
+     
     }
 
 
@@ -103,12 +107,25 @@ color: var(--primary-icon-color);
         .main-clients__list {
             width: 170px;
             height: 92px;
+       
         }
-    }
+
+
+
 }
 
+}
+
+@media screen and (min-width: 1200px) {
+    .main-client__title {
+    font-size: 36px;
+}
+
+    }
 
 
+
+    
 
 
 
