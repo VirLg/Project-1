@@ -1,14 +1,10 @@
- @media screen and (max-width:479px) {
-    modal {
-            
-            max-width: 450px;
-    }
-    .modal-form {
-        max-width: 370px;
-    }
+ 
+ 
+ 
+ 
+ 
+ 
 
-
-}
 
 
 .backdrop {
@@ -37,7 +33,7 @@
 
 .modal {
     position: absolute;
-    width: 450px;
+
     height: auto;
     top: 50%;
     left: 50%;
@@ -85,11 +81,53 @@ textarea {
     resize: none;
 }
 
+
+
+
+
+
+
+ @media screen and (max-width: 479px) {
+     .modal {
+         width: 90%;
+     }
+
+     .modal-form {
+         width: 100%;
+     }
+
+         .form-lable-text {
+           
+             left: 12%;
+         }
+
+
+     .form-lable-item:focus+.form-lable-text,
+     .form-lable-item:not(:placeholder-shown)+.form-lable-text {
+         transform: translate(-28px, -37px);
+         color: currentColor;
+     }
+
+         .policy-text {
+          
+             margin-left: 27px;
+
+ }
+
+ }
+
+@media screen and (max-width: 350px) {
+    .form-lable-text {
+
+        left: 13%;
+    }
+}
+
 .modal-form {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 370px;
+    
 }
 
 .modal-title {
@@ -125,11 +163,7 @@ textarea {
     color: var(--accent-text-color);
 }
 
-.form-lable-item:focus+.form-lable-text,
-.form-lable-item:not(:placeholder-shown)+.form-lable-text {
-    transform: translate(-37px, -37px);
-    color: currentColor;
-}
+
 
 .form-lable:nth-child(-n + 3) {
     margin-bottom: 28px;
@@ -151,7 +185,7 @@ textarea {
     position: absolute;
     transform: translateY(-50%);
     top: 50%;
-    left: 9%;
+    
 
     line-height: 1.16;
     letter-spacing: 0.01em;
@@ -353,6 +387,11 @@ btn-item-test {
     margin-bottom: 40px;
 }
 
+
+
+
+
+
 @media screen and (min-width: 480px) {
  
     .modal {
@@ -364,6 +403,15 @@ btn-item-test {
 .modal-form {
 
     width: 370px;
+}
+  .form-lable-text {
+
+      left: 10%;
+  }
+.form-lable-item:focus+.form-lable-text,
+.form-lable-item:not(:placeholder-shown)+.form-lable-text {
+    transform: translate(-37px, -37px);
+    color: currentColor;
 }
 
 }
